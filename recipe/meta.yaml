@@ -1,6 +1,6 @@
 {% set name = "aldjemy" %}
-{% set version = "0.7.0"%}
-{% set sha256 = "2282c5cc68a82b145fd0a536c910d4c6f27302a340df0251352ae1798d7a9299" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "0293596fe0926a9f598fa0e0de5e4e4150ed62dd29a1bc07539787cacc4f7ee5" %}
 
 package:
   name: {{ name|lower }}
@@ -33,9 +33,7 @@ test:
     - 'cd test_project & python manage.py test'  # [win]
 
   requires:
-    # django 1.11 yields
-    # ImportError: No module named test1.urls 
-    - django <1.11
+    - django
     - django-extensions
     - sqlalchemy >0.7.1
 
@@ -46,8 +44,7 @@ about:
   home: https://github.com/Deepwalker/aldjemy/
   license: BSD
   license_family: BSD
-  # To be added https://github.com/Deepwalker/aldjemy/pull/50
-  # license_file: LICENSE
+  license_file: LICENSE
   summary: 'SQLAlchemy to Django integration library'
   dev_url: https://github.com/Deepwalker/aldjemy
 
