@@ -1,6 +1,6 @@
 {% set name = "aldjemy" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "4dc07ad4f30fca42529fdbc6d7350329c5ca6517d842e618146f4ca445c19a13" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "aca98c748b2db6c432324a6e4cc78710444a951e50679b53dfb510dbc25fcfce" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
