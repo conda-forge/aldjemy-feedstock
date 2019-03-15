@@ -18,9 +18,8 @@ Summary: SQLAlchemy to Django integration library
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/aldjemy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/aldjemy-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/aldjemy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/aldjemy-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/aldjemy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/aldjemy-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/aldjemy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/aldjemy-feedstock)
 
 Current release info
 ====================
