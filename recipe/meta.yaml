@@ -7,20 +7,15 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - python
-    - pip
-
   host:
     - python
     - pip
@@ -34,8 +29,8 @@ test:
     - aldjemy
 
   commands:
-    - 'cd test_project; python manage.py test'  # [not win]
-    - 'cd test_project & python manage.py test'  # [win]
+    - cd test_project 
+    - python manage.py test
 
   requires:
     - django
