@@ -29,8 +29,8 @@ test:
     - aldjemy
 
   commands:
-    - 'cd test_project; python manage.py test'  # [not win]
-    - 'cd test_project & python manage.py test'  # [win]
+    - cd test_project 
+    - python manage.py test
 
   requires:
     - django
