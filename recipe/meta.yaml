@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/Deepwalker/aldjemy/
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'SQLAlchemy to Django integration library'
