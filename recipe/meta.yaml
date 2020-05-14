@@ -33,7 +33,7 @@ test:
     - python manage.py test
 
   requires:
-    - django
+    - django <2.2
     - django-extensions
     - sqlalchemy >0.7.1
 
