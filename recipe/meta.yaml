@@ -1,6 +1,6 @@
 {% set name = "aldjemy" %}
-{% set version = "0.10.1" %}
-{% set sha256 = "7f415c60b48833b37a0cbfede5b9321fb0f320783df0b1779b1e87364ddff023" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "38ef5914e8d93cd19b0d6059b6963007445dd153622ea0b35901b91b8ca3d79a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -29,7 +29,7 @@ test:
     - aldjemy
 
   commands:
-    - cd test_project 
+    - cd test_project
     - python manage.py test
 
   requires:
@@ -45,7 +45,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'SQLAlchemy to Django integration library'
+  summary: SQLAlchemy to Django integration library
   dev_url: https://github.com/Deepwalker/aldjemy
 
 extra:
