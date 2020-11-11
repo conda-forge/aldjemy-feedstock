@@ -3,13 +3,13 @@ About aldjemy
 
 Home: https://github.com/Deepwalker/aldjemy/
 
-Package license: BSD
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aldjemy-feedstock/blob/master/LICENSE.txt)
 
 Summary: SQLAlchemy to Django integration library
 
-
+Development: https://github.com/Deepwalker/aldjemy
 
 Current build status
 ====================
