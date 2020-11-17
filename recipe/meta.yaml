@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
@@ -33,7 +33,7 @@ test:
     - python manage.py test
 
   requires:
-    - django <2.2
+    - django >=2.2
     - django-extensions
     - sqlalchemy >0.7.1
 
