@@ -30,19 +30,6 @@ test:
   imports:
     - aldjemy
 
-  requires:
-    - django-extensions
-    - psycopg2-binary
-    - poetry
-
-  commands:
-    - poetry run ./test.sh
-
-  source_files:
-    - test.sh
-    - test_project
-    - test_project_postgres
-
 about:
   home: https://github.com/aldjemy/aldjemy/
   license: BSD-3-Clause
