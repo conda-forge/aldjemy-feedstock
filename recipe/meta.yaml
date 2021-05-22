@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - poetry
 
   run:
     - python >=3.6
@@ -29,16 +30,18 @@ test:
   imports:
     - aldjemy
 
-  commands:
-    - cd test_project
-    - python manage.py test
-
   requires:
     - django-extensions
     - psycopg2-binary
+    - poetry
+
+  commands:
+    - poetry run ./test.sh
 
   source_files:
+    - test.sh
     - test_project
+    - test_project_postgres
 
 about:
   home: https://github.com/aldjemy/aldjemy/
