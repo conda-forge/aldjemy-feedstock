@@ -21,8 +21,9 @@ requirements:
     - pip
 
   run:
-    - python
-    - sqlalchemy >0.7.1
+    - python >=3.6
+    - sqlalchemy >=1.4
+    - django >=2.2
 
 test:
   imports:
@@ -33,20 +34,19 @@ test:
     - python manage.py test
 
   requires:
-    - django >=2.2
     - django-extensions
-    - sqlalchemy >0.7.1
+    - psycopg2-binary
 
   source_files:
     - test_project
 
 about:
-  home: https://github.com/Deepwalker/aldjemy/
+  home: https://github.com/aldjemy/aldjemy/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: SQLAlchemy to Django integration library
-  dev_url: https://github.com/Deepwalker/aldjemy
+  summary: SQLAlchemy for your Django models
+  dev_url: https://github.com/aldjemy/aldjemy
 
 extra:
   recipe-maintainers:
