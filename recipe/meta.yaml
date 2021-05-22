@@ -1,6 +1,6 @@
 {% set name = "aldjemy" %}
-{% set version = "2.0" %}
-{% set sha256 = "4dbaa71e99f305fb3c47420084c5f26d6cc43732594057e04822b2db063528d1" %}
+{% set version = "2.1" %}
+{% set sha256 = "c2b797a2786bbd0bc9f12b05c57b4e68d483f2a93ce49f4a897eb433a4a70e03" %}
 
 package:
   name: {{ name|lower }}
