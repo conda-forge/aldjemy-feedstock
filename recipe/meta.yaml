@@ -1,6 +1,6 @@
 {% set name = "aldjemy" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "38ef5914e8d93cd19b0d6059b6963007445dd153622ea0b35901b91b8ca3d79a" %}
+{% set version = "2.0" %}
+{% set sha256 = "4dbaa71e99f305fb3c47420084c5f26d6cc43732594057e04822b2db063528d1" %}
 
 package:
   name: {{ name|lower }}
@@ -19,34 +19,24 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - poetry
 
   run:
-    - python
-    - sqlalchemy >0.7.1
+    - python >=3.6
+    - sqlalchemy >=1.4
+    - django >=2.2
 
 test:
   imports:
     - aldjemy
 
-  commands:
-    - cd test_project
-    - python manage.py test
-
-  requires:
-    - django >=2.2
-    - django-extensions
-    - sqlalchemy >0.7.1
-
-  source_files:
-    - test_project
-
 about:
-  home: https://github.com/Deepwalker/aldjemy/
+  home: https://github.com/aldjemy/aldjemy/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: SQLAlchemy to Django integration library
-  dev_url: https://github.com/Deepwalker/aldjemy
+  summary: SQLAlchemy for your Django models
+  dev_url: https://github.com/aldjemy/aldjemy
 
 extra:
   recipe-maintainers:
